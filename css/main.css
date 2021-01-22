@@ -51,6 +51,26 @@ table {
 */
 
 /* My CSS Start Here */
+
+.whole{
+  clear: both;
+}
+
+* {
+  border: 1px solid #000000;
+}
+
+/* article {
+	border: 1px solid #000000;
+} */
+
+nav a {
+  display: inline-block;
+  float: left;
+  margin: 2px;
+  width: 10%;
+}
+
 table, th, td {
   border: 1px solid black;
 }
