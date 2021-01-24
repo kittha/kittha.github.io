@@ -8,12 +8,12 @@
   <script src="js/myfirstjs.js"></script>
 </head>
 
-<body>
+<body onresize="message('resize')">
   <header>
     <h1>My tools</h1>
     
+    <h2>Nav bar</h2>
     <nav>
-      <h2>Nav bar</h2>
       <a href="index.html">Home</a>
       <a href="play.html">Testing area</a>
     </nav>
@@ -27,6 +27,9 @@
   </p>
   <p><mark onmouseover="message('onmouseover mark')">test mark</mark></p>
   <button onclick="message('onclick button')">test button</button>
+  <button onclick="message('onclick 1')">1</button>
+  <button onclick="message('onclick 2')">2</button>
+  <button onclick="message('onclick 3')">3</button>
   </article>
   
   <article>
