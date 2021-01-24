@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>My tools</title>
   <link rel="stylesheet" href="css/main.css">
+  <script src="js/myfirstjs.js"></script>
 </head>
 
 <body>
@@ -19,10 +20,12 @@
   </header>
   
   <article class="whole">
-  <h2>Warning</h2>
-  <p>เวลาทำโปรเจคอะไรใหญ่ ๆ <mark><strong>ให้วางแผนดี ๆ</strong></mark> จากนั้น <mark><strong>ลองแก้ปัญหาย่อย ๆ พวก toy problem</mark></strong> และ <mark><strong>ร่างใส่กระดาษก่อนเสมอ</mark></strong><br/>
+  <p id="output">Waiting for feedback...</p>
+  <h2 onmouseover="message('onmouseover h2')">Warning</h2>
+  <p onmouseover="message('onmosueover p')">เวลาทำโปรเจคอะไรใหญ่ ๆ <mark><strong>ให้วางแผนดี ๆ</strong></mark> จากนั้น <mark><strong>ลองแก้ปัญหาย่อย ๆ พวก toy problem</mark></strong> และ <mark><strong>ร่างใส่กระดาษก่อนเสมอ</mark></strong><br/>
    <strong>อย่ารีบเขียนโค้ด เพราะถ้ามีอะไรผิดพลาดขึ้นมา มันวิเคราะห์ยาก และแก้ยาก</strong>
   </p>
+  <p><mark onmouseover="message('onmouseover mark')">test</mark></p>
   </article>
   
   <article>
