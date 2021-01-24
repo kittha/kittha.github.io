@@ -8,7 +8,7 @@
   <script src="js/myfirstjs.js"></script>
 </head>
 
-<body onresize="message('resize')">
+<body onload="setDate()" onresize="message('resize')">
   <header>
     <h1>My tools</h1>
     
@@ -20,6 +20,7 @@
   </header>
   
   <article class="whole">
+  <p>Today is: <span id="date"></span></p>
   <p id="output">Waiting for feedback...</p>
   <h2 onmouseover="message('onmouseover h2')">Warning</h2>
   <p onmouseover="message('onmosueover p')">เวลาทำโปรเจคอะไรใหญ่ ๆ <mark><strong>ให้วางแผนดี ๆ</strong></mark> จากนั้น <mark><strong>ลองแก้ปัญหาย่อย ๆ พวก toy problem</mark></strong> และ <mark><strong>ร่างใส่กระดาษก่อนเสมอ</mark></strong><br/>
@@ -30,6 +31,7 @@
   <button onclick="message('onclick 1')">1</button>
   <button onclick="message('onclick 2')">2</button>
   <button onclick="message('onclick 3')">3</button>
+  <button onclick="setConsole('DOG')">click and see console (check console the "DOG" should appear.)</button>
   </article>
   
   <article>
