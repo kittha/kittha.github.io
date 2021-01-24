@@ -52,6 +52,14 @@ table {
 
 /* My CSS Start Here */
 
+.closed {
+	display: none;
+}
+
+.opened {
+	display: block;
+}
+
 .whole{
   clear: both;
 }

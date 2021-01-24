@@ -9,7 +9,7 @@
 </head>
 
 <body onload="setDate()" onresize="message('resize')">
-  <header>
+  <header onclick="console.log(this.id)" id="demo">
     <h1>My tools</h1>
     
     <h2>Nav bar</h2>
@@ -20,32 +20,35 @@
   </header>
   
   <article class="whole">
-  <p>Today is: <span id="date"></span></p>
-  <p id="output">Waiting for feedback...</p>
-  <h2 onmouseover="message('onmouseover h2')">Warning</h2>
-  <p onmouseover="message('onmosueover p')">เวลาทำโปรเจคอะไรใหญ่ ๆ <mark><strong>ให้วางแผนดี ๆ</strong></mark> จากนั้น <mark><strong>ลองแก้ปัญหาย่อย ๆ พวก toy problem</mark></strong> และ <mark><strong>ร่างใส่กระดาษก่อนเสมอ</mark></strong><br/>
-   <strong>อย่ารีบเขียนโค้ด เพราะถ้ามีอะไรผิดพลาดขึ้นมา มันวิเคราะห์ยาก และแก้ยาก</strong>
-  </p>
-  <p><mark onmouseover="message('onmouseover mark')">test mark</mark></p>
-  <button onclick="message('onclick button')">test button</button>
-  <button onclick="message('onclick 1')">1</button>
-  <button onclick="message('onclick 2')">2</button>
-  <button onclick="message('onclick 3')">3</button>
-  <button onclick="setConsole('DOG')">click and see console (check console the "DOG" should appear.)</button>
+    <p>Today is: <span id="date"></span></p>
+    <p id="output">Waiting for feedback...</p>
+    <h2 onmouseover="message('onmouseover h2')">Warning</h2>
+    <p onmouseover="message('onmosueover p')">เวลาทำโปรเจคอะไรใหญ่ ๆ <mark><strong>ให้วางแผนดี ๆ</strong></mark> จากนั้น <mark><strong>ลองแก้ปัญหาย่อย ๆ พวก toy problem</mark></strong> และ <mark><strong>ร่างใส่กระดาษก่อนเสมอ</mark></strong><br/>
+    <strong>อย่ารีบเขียนโค้ด เพราะถ้ามีอะไรผิดพลาดขึ้นมา มันวิเคราะห์ยาก และแก้ยาก</strong>
+    </p>
+    <p><mark onmouseover="message('onmouseover mark')">test mark</mark></p>
+    <button onclick="openMe()">open</button>
+    <button onclick="closeMe()">close</button>
+    <button onclick="message('onclick button')">test button</button>
+    <button onclick="message('onclick 1')">1</button>
+    <button onclick="message('onclick 2')">2</button>
+    <button onclick="message('onclick 3')">3</button>
+    <button onclick="setConsole('DOG')">click and see console (check console the "DOG" should appear.)</button>
+    <button onclick="console.log(this.innerHTML)">fetch "THIS" innerHTML to console GG.</button>
   </article>
   
   <article>
-  <h2>Online tools</h2>
-  <a href="https://codepen.io/pen/">Codepen (Testing and showcase for HTML, CSS, JavaScript></a><br/>
-  <a href="https://app.diagrams.net/">Diagrams.net (flowchart tools)</a><br/>
-  <a href="https://www.figma.com/files/recent">Figma (Vector graphics editor and prototyping tool)</a><br/>
-  <a href="https://github.com/">GitHub (Cloud base hosting for Version Control)</a><br/>
-  <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=web+safe+colors">Web Safe Color (unofficial)</a><br/>
-  <a href="https://fonts.google.com/">Google fonts</a><br/>
-  <a href="https://css3generator.com/">CSS3 Generator</a><br/>
-  <a href="https://chrispederick.com/work/web-developer/">Web Developer Tools Browser Extension</a><br/>
-  <a href="https://meyerweb.com/eric/tools/css/reset/">CSS Tools: Reset CSS</a><br/>
-  <a href="https://caniuse.com/">Can I Use HTML, CSS properties? Do I need browser prefixes?</a><br/>
+    <h2>Online tools</h2>
+    <a href="https://codepen.io/pen/">Codepen (Testing and showcase for HTML, CSS, JavaScript></a><br/>
+    <a href="https://app.diagrams.net/">Diagrams.net (flowchart tools)</a><br/>
+    <a href="https://www.figma.com/files/recent">Figma (Vector graphics editor and prototyping tool)</a><br/>
+    <a href="https://github.com/">GitHub (Cloud base hosting for Version Control)</a><br/>
+    <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=web+safe+colors">Web Safe Color (unofficial)</a><br/>
+    <a href="https://fonts.google.com/">Google fonts</a><br/>
+    <a href="https://css3generator.com/">CSS3 Generator</a><br/>
+    <a href="https://chrispederick.com/work/web-developer/">Web Developer Tools Browser Extension</a><br/>
+    <a href="https://meyerweb.com/eric/tools/css/reset/">CSS Tools: Reset CSS</a><br/>
+    <a href="https://caniuse.com/">Can I Use HTML, CSS properties? Do I need browser prefixes?</a><br/>
   </article>
   
   <article>
@@ -58,32 +61,37 @@
   </article>
   
   <article>
-  <h2>CSS example</h2>
+    <h2>CSS example</h2>
     <a href="http://www.csszengarden.com/">CSS Great Example</a><br/>
   </article>
   
   <article>
-  <h2>HTML, CSS Validation Tool, Evaluation Tool</h2>
-  <a href="https://validator.w3.org/">HTML W3C Validate tool</a><br/>
-  <a href="https://jigsaw.w3.org/css-validator/">CSS W3C Validate tool</a><br/>
+    <h2>HTML, CSS Validation Tool, Evaluation Tool</h2>
+    <a href="https://validator.w3.org/">HTML W3C Validate tool</a><br/>
+    <a href="https://jigsaw.w3.org/css-validator/">CSS W3C Validate tool</a><br/>
   </article>
   
   <article>
-  <h2>Web Accessibility Evaluation Tool</h2>
-  <a href="https://wave.webaim.org/">WAVE Web Accessibility Evaluation Tool</a><br/>
-  <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a><br/>
+    <h2>Web Accessibility Evaluation Tool</h2>
+    <a href="https://wave.webaim.org/">WAVE Web Accessibility Evaluation Tool</a><br/>
+    <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a><br/>
   </article>
   
   <article>
-  <h2>Tutorials</h2>
-  <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">Web Accessibility Tutorials (alt Decision Tree)</a><br/>
-  <a href="https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824">Article about proper using h1 as semantic tags</a><br/>
+    <h2>Tutorials</h2>
+    <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">Web Accessibility Tutorials (alt Decision Tree)</a><br/>
+    <a href="https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824">Article about proper using h1 as semantic tags</a><br/>
   </article>
   
   <article>
-  <h2>Free eBook</h2>
-  <a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML & CSS by Shay Howe</a><br/>
-  <a href="https://learn.shayhowe.com/advanced-html-css/">Learn to Code Advanced HTML & CSS</a><br/>
+    <h2>Free eBook</h2>
+    <a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML & CSS by Shay Howe</a><br/>
+    <a href="https://learn.shayhowe.com/advanced-html-css/">Learn to Code Advanced HTML & CSS</a><br/>
+  </article>
+
+  <article>
+    <h2>Cheatsheet</h2>
+    <a href="http://www.cheat-sheets.org/saved-copy/jsquick.pdf">JS cheatsheet</a><br/>
   </article>
   
   <footer>
